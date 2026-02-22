@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার ওয়েবসাইট</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+            background: rgba(241, 196, 15, 0.1);
+        }
+
+        nav a.active {
+            color: #f1c40f !important;
+            background: rgba(241, 196, 15, 0.25);
+            border-bottom: 3px solid #f1c40f;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1200/500');
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .card-section {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+            max-width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #d35400;
+            transform: scale(1.05);
+        }
+
+        .funny-note {
+            background: #fff3cd;
+            border: 2px dashed #f1c40f;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .card { min-width: 100%; }
+            nav a { margin: 8px 10px; font-size: 0.95em; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>আমার ওয়েবসাইট</h1>
+    <p>HTML দিয়ে তৈরি সুন্দর একটি ওয়েবসাইট</p>
+</header>
+
+<nav>
+    <a href="#home" class="nav-link active">হোম</a>
+    <a href="#about" class="nav-link">আমাদের সম্পর্কে</a>
+    <a href="#services" class="nav-link">সার্ভিস</a>
+    <a href="#contact" class="nav-link">যোগাযোগ</a>
+</nav>
+
+<section class="hero" id="home">
+    <div>
+        <h1>স্বাগতম FINX ওয়েবসাইটে</h1>
+        <p>এটি একটি সম্পূর্ণ চাপাবাজির ওয়েবসাইট 😃</p>
+        <a href="#more-info" class="btn" id="learn-more-btn">আরও জানুন</a>
+    </div>
+</section>
+
+<!-- Funny More Info Section -->
+<div class="container section" id="more-info-section">
+    <div class="funny-note">
+        <h2>বিঃদ্রঃ</h2>
+        <p>আরো কিছু জানার থাকলে সরাসরি বিন্দিয়ায় গিয়ে শেখ হাসিনা ও মোদিকে জিগ্গেস করে আসুন।<br>
+        আর নয়তো খাম্বা তারেক কে জিগ্গেস করুন। দেশের লে*তা খাম্বা তারেক 😂।<br>
+        চাঁদাবাজির বদলে সমঝোতা করুন দেশের টাকা বিদেশ পাচার করুন 🙃।<br><br>
+        বিশেষ ধন্যবাদ দিয়ে আপনাদের প্রিয় মোদির স্ত্রী জনাব শেখ হাসিনা।<br>
+        জয় বাংলা জয় বঙ্গবল্টু 😃</p>
+    </div>
+</div>
+
+<!-- About Section -->
+<div class="container section" id="about-section">
+    <h2>আমাদের সম্পর্কে</h2>
+    <div class="card" style="max-width:500px; margin:0 auto;">
+        <h3>Study</h3>
+        <p><strong>Student of:</strong> Tolaram College</p>
+        <p><strong>Session:</strong> 2025-2026</p>
+        <p><strong>Group:</strong> Web Developer</p>
+        <p><strong>Nickname:</strong> Finx A</p>
+    </div>
+</div>
+
+<!-- Services Section -->
+<div class="container section" id="services-section">
+    <h2>আমাদের সার্ভিস</h2>
+    <div class="card-section">
+        <div class="card"><h3>Service 01</h3><p>বেকার 🙃</p></div>
+        <div class="card"><h3>Service 02</h3><p>ফ্যামিলি কার্ড</p></div>
+        <div class="card"><h3>Service 03</h3><p>কৃষি কার্ড</p></div>
+        <div class="card"><h3>Service 04</h3><p>চান্দা বাজি কার্ড</p></div>
+        <div class="card"><h3>Service 05</h3><p>খাম্বা কার্ড</p></div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="container section" id="contact-section">
+    <h2>যোগাযোগ</h2>
+    <div class="card" style="max-width:500px; margin:0 auto;">
+        <h3>Contact Info</h3>
+        <p><strong>ঠিকানা:</strong> ধানমন্ডি ৩২, ঢাকা দিল্লি</p>
+        <p><strong>Email:</strong> shakehasinavsmodi@gmail.com</p>
+        <p><strong>Location:</strong> Dilli, Modi House, India, Bindia</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 আমার ওয়েবসাইট | সকল অধিকার সংরক্ষিত</p>
+</footer>
+
+<script>
+    // Default: show home
+    document.getElementById('home').classList.add('active');
+
+    // Navigation click handler
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // Remove active from all nav links
+            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+            // Add active to clicked
+            this.classList.add('active');
+
+            // Hide all content sections
+            document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+
+            // Always show hero/home
+            document.getElementById('home').classList.add('active');
+
+            // Get target section
+            const targetId = this.getAttribute('href').substring(1) + '-section';
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                targetSection.classList.add('active');
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // "আরও জানুন" button click
+    document.getElementById('learn-more-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Remove active from nav links (optional)
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+
+        // Hide other sections
+        document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+
+        // Show more-info section
+        document.getElementById('more-info-section').classList.add('active');
+        document.getElementById('more-info-section').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
+</body>
+  </html>
